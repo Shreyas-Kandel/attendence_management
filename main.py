@@ -1,20 +1,11 @@
-def add_student():
-    print("Adding a student...")
-
-def update_student():
-    print("Updating a student...")
-
-def delete_student():
-    print("Deleting a student...")
-
-def view_students():
-    print("Viewing all students...")
-
-def take_attendance():
-    print("Taking attendance...")
-
-def view_attendance():
-    print("Viewing attendance...")
+from student_management import (
+add_student,
+update_student,
+delete_student, 
+view_students, 
+take_attendance, 
+view_attendance,
+)
 
 def menu():
     print("Welcome to the Student Attendance System \n")
@@ -37,6 +28,7 @@ while True:
         delete_student()
     elif option == "4":
         view_students()
+        break
     elif option == "5":
         take_attendance()
     elif option == "6":
